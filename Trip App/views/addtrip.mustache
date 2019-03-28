@@ -10,8 +10,11 @@
 
 <body>
 
+  {{> menu}}
+
+
+
     <div id="addtripbox">
-    <h2> Add your trip! </h2>
     <form action="/addtrip" method="POST">
     <input type="text" name="tripTitle" placeholder="Title"/>
     <input type="text" name="tripImage" placeholder="Image"/>
