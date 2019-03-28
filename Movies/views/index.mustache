@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Movies</title>
+  </head>
+  <body>
+
+    {{> menu}}
+
+    <div id="addMovie">
+      <h2> Add your movie! </h2>
+      <form action="/movies/addMovie" method="post">
+      <input type="text" name="movieTitle" placeholder="Title"></input>
+      <input type="text" name="movieImage" placeholder="Poster URL"></input>
+      <input type="text" name="movieGenre" placeholder="Genre"></input>
+      <input type="text" name="movieDescription" placeholder="Description"></input>
+      <button type="submit">Submit</button>
+      </form>
+    </div>
+
+    <!-- <ul>
+    {{#movies}}
+    <h2> {{title}} </h2>
+    <img src={{image}}>
+    <p>{{genre}}</p>
+    <p>{{description}}</p>
+    <form action="/deletetrip" method="POST">
+    <input type="hidden" name="id" value="{{id}}"></input>
+    <input type="submit" value="Delete Movie"></input>
+    </form>
+    {{/movies}}
+    </ul> -->
+
+  </body>
+</html>

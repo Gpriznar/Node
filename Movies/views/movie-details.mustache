@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+
+    {{> menu}}
+
+    <h1> Movie Info </h1>
+
+  <ul>
+    {{#movies}}
+    <li>
+    <h3> {{title}} </h3>
+    <img src="{{image}}" style="width:135px;height:200px"/>
+    <p> {{genre}} </p>
+    <p> {{description}} </p>
+    <form action='/movies/remove-movie' method="POST">
+      <input type="hidden" name="removeID" value="{{id}}" />
+      <button type="submit">Remove</button>
+    </form>
+  </li>
+    {{/movies}}
+
+    {{^ movies}}
+    <h2> ! No movies have been added ! </h2>
+    {{/movies}}
+  </ul>
+
+  </body>
+</html>
