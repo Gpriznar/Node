@@ -9,4 +9,4 @@ Projects designed to practice and expand upon backend programming knowledge.
 
 **Movies** This movie application focused on using routers to connect various pages together on a local server in order to simplify code and allow for additional manipluation. The user can add movies, navigate to a different page using a "partial" menu and then view information about their movies or delete from the list. This app took advantage of the uuid package rather than manually creating a key via a function. Furture updates would include the ability to sort by genre.
 
-**Blog** This application allows the user to post a blog, view all of their blogs in addition to editing and deleting previous posts. This was built using a local database via postgre and mustache. (There are routing problems right now due to variable name changes) 
+**Blog** This application allows the user to post a blog, view all of their blogs in addition to editing and deleting previous posts. This was built using a local database via postgre and mustache. Updated to include a registration/login page which saves user info to the database. Passwords are not encrypted at this time.
