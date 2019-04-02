@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+
+    {{menu}}
+    <form action="/add-comment" method="POST">
+      <input type="hidden" name="commentpostid" value="{{postid}}" />
+      <textarea name="comment" rows="8" cols="80" placeholder="Enter Comment Here"></textarea>
+      <button type="submit">Save</button>
+    </form>
+
+  </body>
+</html>
